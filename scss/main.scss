@@ -32,9 +32,29 @@ nav{
     }
 }
 
-main{
+/*main{
     background-color: rgb(128, 0, 85);
 
+}*/
+
+article{
+    color:$primary-text-color;
+    width: auto;
+    padding-left: 45px;
+    padding-right: 45px;
+    .me-section{
+        width:50%;
+        background-color: rgb(128, 0, 85);
+        img{
+            width: 100%;
+            
+        }
+
+    }
+    .image-section{
+        width: 50%;
+        background-color: blue;
+    }
 }
 
 .footer{

@@ -26,8 +26,26 @@ nav .icons button {
   border-style: none;
 }
 
-main {
+/*main{
+    background-color: rgb(128, 0, 85);
+
+}*/
+article {
+  color: #e397fa;
+  width: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+article .me-section {
+  width: 50%;
   background-color: rgb(128, 0, 85);
+}
+article .me-section img {
+  width: 100%;
+}
+article .image-section {
+  width: 50%;
+  background-color: blue;
 }
 
 .footer {
