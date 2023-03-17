@@ -42,20 +42,101 @@ article{
     width: auto;
     padding-left: 45px;
     padding-right: 45px;
+    padding-top: 70px;
+    display: flex;
+    justify-content: space-between;
     .me-section{
-        width:50%;
-        background-color: rgb(128, 0, 85);
-        img{
-            width: 100%;
-            
-        }
+        /*width:50%;*/
+       /* background-color: rgb(128, 0, 85);*/
+       display: flex;
+       flex-direction: column;
+       column-gap: 15px;
+       padding-top: 50px;
+       gap: 25px;        
+    }
+    h1{
+        font-size: 2em;
+        padding: 0px;
+        margin: 0px;
+    }
+    p{
+        font-size: 1em;
+    }
+   
+    button{
+        background: none;
+        border-style: none;
+        width: 12vw; /*responsivo*/
+        padding: 20px;
+        background-color: #cc85e2;
+        font-family: $font-stack;
+        border-radius: 35px;
+        color:white;
+        font-size: 1em;
 
     }
     .image-section{
-        width: 50%;
-        background-color: blue;
+        /*width: 50%;*/
+        /*background-color: blue;*/
+        img{
+            width: 25vw;  /*responsivo*/
+            border-radius: 19px;
+
+            
+        }
     }
 }
+
+section{
+    width: auto;
+    height: auto;
+    /*background-color: pink;*/
+    padding: 60px;
+    h2{
+        color: #cc85e2;
+        font-size: 2em;
+    }
+    .tech{
+        h2{
+           font-weight: 300; 
+            padding-bottom: 60px;
+        }
+        .card-section{
+            display: flex;
+            width: auto;
+            height: auto;
+
+
+        .course-card{
+                width: 12vw;
+                height: auto;
+                background-color: pink;
+                color: $primary-text-color;
+                padding: 20px;
+                border-radius: 8px;
+                .course-image{
+                    width: 100%;
+                    height: 100%;
+                    display:flex;
+                    justify-content: center;
+                    align-items:center;
+                    img{
+                        width: 200px;
+                        height: 250px;  /*quizas mover*/
+                        background-image:cover;
+                        border-radius: 6px;
+        
+                    }
+                }
+               
+    
+            }
+        }
+       
+    }
+}
+
+
 
 .footer{
     background-color: #cc85e2;
