@@ -1,12 +1,13 @@
-$primary-color: #e397fa;
-$primary-text-color: #e397fa;
+$primary-color: #FFE6F7;
+$primary-text-color: #FFE6F7;
 $font-stack: 'Roboto', sans-serif;
+$secondary-color:#937DC2;
 
 
 body{
     margin: 0;
     padding: 0;
-    background-color: purple;
+    background-color: #644A7F;
     font-family: $font-stack;
 }
 
@@ -90,29 +91,33 @@ article{
 section{
     width: auto;
     height: auto;
-    /*background-color: pink;*/
     padding: 60px;
     h2{
         color: #cc85e2;
         font-size: 2em;
     }
     .tech{
+        padding-bottom: 30px;
         h2{
            font-weight: 300; 
-            padding-bottom: 60px;
+            padding-bottom: 30px;
         }
         .card-section{
-            display: flex;
             width: auto;
             height: auto;
-            
-
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items:center;
+            column-gap: 35px;
+            row-gap: 40px;
+        }
         .course-card{
-                width: 14vw;
-                height: 45vh;
-                background-color: pink;
+                width: 25vw; /*14vw;*/
+                height: 55vh; /*antes 45v*/
+                background-color: $secondary-color; /*#C689C6;*/
                 color: $primary-text-color;
-                padding: 20px;
+                padding: 18px;
                 border-radius: 8px;
                 .icon{
                     width: 100%;
@@ -121,24 +126,21 @@ section{
                     padding-bottom: 12px;
                     svg{
                         width: 28px;
-                        height: 28px;
-                        stroke: #e397fa;
-                        stroke-width: "2";
-                        
+                        height: 28px;                        
                     }
                 }
-                .course-image{
-                    width: 100%;
-                    height: auto;
-                    display:flex;
-                    justify-content: center;
-                    align-items:center;
-                    img{
-                        width: 12vw;
-                        height: 30vh;  /*quizas mover*/
-                        /*background-image:cover;*/
-                        object-fit:cover;
-                        border-radius: 6px;
+            .course-image{
+                width: 100%;
+                height: auto;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                img{
+                    width: 26vw; /*12vw;*/
+                    height: 40vh;  /*quizas mover*/
+                    /*background-image:cover;*/
+                    object-fit:cover;
+                    border-radius: 6px;
         
                     }
                 }
@@ -146,14 +148,23 @@ section{
     
             }
         }
-       
-    }
+
+    
+    
+ 
+        .english{
+            @extend .tech;
+            .course-card{
+                background-color: #cc85e2;
+            }
+        }
+
 }
 
 
 
 .footer{
-    background-color: #cc85e2;
+    background-color: #C689C6;
     width: 100%;
     height: 200px;
 }

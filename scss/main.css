@@ -1,12 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: purple;
+  background-color: #644A7F;
   font-family: "Roboto", sans-serif;
 }
 
 nav {
-  color: #e397fa;
+  color: #FFE6F7;
   width: auto;
   /*height: 100px;*/
   display: flex;
@@ -31,10 +31,11 @@ nav .icons button {
 
 }*/
 article {
-  color: #e397fa;
+  color: #FFE6F7;
   width: auto;
   padding-left: 45px;
   padding-right: 45px;
+  padding-top: 70px;
   display: flex;
   justify-content: space-between;
 }
@@ -76,8 +77,72 @@ article .image-section img {
   border-radius: 19px;
 }
 
-.footer {
+section {
+  width: auto;
+  height: auto;
+  padding: 60px;
+}
+section h2 {
+  color: #cc85e2;
+  font-size: 2em;
+}
+section .tech, section .english {
+  padding-bottom: 30px;
+}
+section .tech h2, section .english h2 {
+  font-weight: 300;
+  padding-bottom: 30px;
+}
+section .tech .card-section, section .english .card-section {
+  width: auto;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+  row-gap: 40px;
+}
+section .tech .course-card, section .english .course-card {
+  width: 25vw; /*14vw;*/
+  height: 55vh; /*antes 45v*/
+  background-color: #937DC2; /*#C689C6;*/
+  color: #FFE6F7;
+  padding: 18px;
+  border-radius: 8px;
+}
+section .tech .course-card .icon, section .english .course-card .icon {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 12px;
+}
+section .tech .course-card .icon svg, section .english .course-card .icon svg {
+  width: 28px;
+  height: 28px;
+}
+section .tech .course-card .course-image, section .english .course-card .course-image {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .tech .course-card .course-image img, section .english .course-card .course-image img {
+  width: 26vw; /*12vw;*/
+  height: 40vh; /*quizas mover*/
+  /*background-image:cover;*/
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 6px;
+}
+section .english .course-card {
   background-color: #cc85e2;
+}
+
+.footer {
+  background-color: #C689C6;
   width: 100%;
   height: 200px;
 }/*# sourceMappingURL=main.css.map */
