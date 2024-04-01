@@ -3,6 +3,19 @@ $primary-text-color: #FFE6F7;
 $font-stack: 'Roboto', sans-serif;
 $secondary-color:#937DC2;
 
+@mixin flexCenter($direction, $content, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content:$content;
+    align-items:$align;
+}
+
+@mixin buttonStyle{
+    button{
+        background:none;
+        border-style: none;
+    }
+}
 
 body{
     margin: 0;
@@ -15,8 +28,8 @@ nav{
     color: $primary-text-color;
     width: auto;
     /*height: 100px;*/
-    display: flex;
-    justify-content: space-between;
+    //display: flex;       //justify-content: space-between;
+    @include flexCenter(row,space-between,center);
     padding: 15px;
 
     p{
@@ -26,10 +39,7 @@ nav{
     .icons{
         display:flex;
         gap:15px; 
-        button{
-            background:none;
-            border-style: none;
-        }
+        @include buttonStyle;
     }
 }
 
@@ -44,8 +54,8 @@ article{
     padding-left: 45px;
     padding-right: 45px;
     padding-top: 70px;
-    display: flex;
-    justify-content: space-between;
+    @include flexCenter(row,space-between,center);
+    //display: flex;    justify-content: space-between;
     .me-section{
         /*width:50%;*/
        /* background-color: rgb(128, 0, 85);*/
@@ -63,7 +73,7 @@ article{
     p{
         font-size: 1em;
     }
-   
+    @include buttonStyle;
     button{
         background: none;
         border-style: none;

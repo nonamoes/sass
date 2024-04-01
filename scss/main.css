@@ -10,7 +10,9 @@ nav {
   width: auto;
   /*height: 100px;*/
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   padding: 15px;
 }
 nav p {
@@ -37,7 +39,9 @@ article {
   padding-right: 45px;
   padding-top: 70px;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 article .me-section {
   /*width:50%;*/
@@ -56,6 +60,10 @@ article h1 {
 }
 article p {
   font-size: 1em;
+}
+article button {
+  background: none;
+  border-style: none;
 }
 article button {
   background: none;
